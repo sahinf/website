@@ -1,3 +1,8 @@
-<!-- <h1>Init Furkan Website</h1> -->
-<img src="lord-farquad-furkan.bmp" alt="" />
+<script>
+	import { base } from '$app/paths';
+</script>
+
+<h1>Welcome to SvelteKit</h1>
+<img src="{base}/lord-farquad-furkan.bmp" alt="" />
+
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
