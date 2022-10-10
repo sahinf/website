@@ -2,42 +2,47 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/website/favicon.png" />
+		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/website/_app/immutable/start-fc79395a.js">
-	<link rel="modulepreload" href="/website/_app/immutable/chunks/index-df6a2127.js">
-	<link rel="modulepreload" href="/website/_app/immutable/components/layout.svelte-e105e7df.js">
-	<link rel="modulepreload" href="/website/_app/immutable/components/pages/_page.svelte-eaacad86.js">
+		<link rel="modulepreload" href="./internal/immutable/start-9b9fbdb9.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/index-56feb427.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/singletons-10de5a6a.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/paths-846459bd.js">
+		<link rel="modulepreload" href="./internal/immutable/components/pages/_layout.svelte-456a859b.js">
+		<link rel="modulepreload" href="./internal/immutable/modules/pages/_layout.ts-897efe68.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/_layout-ad1d2487.js">
+		<link rel="modulepreload" href="./internal/immutable/components/pages/_page.svelte-f06c68a7.js">
 	</head>
 	<body>
 		<div>
 
 
-<h1>Init Furkan Website</h1>
+<h1>Welcome to SvelteKit</h1>
+<img src="/lord-farquad-furkan.bmp" alt="">
+
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 
-		<script type="module" data-sveltekit-hydrate="i63op4">
-		import { set_public_env, start } from "/website/_app/immutable/start-fc79395a.js";
+		<script type="module" data-sveltekit-hydrate="x7m13a">
+			import { start } from "./internal/immutable/start-9b9fbdb9.js";
 
-		set_public_env({});
-
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="i63op4"]').parentNode,
-			paths: {"base":"/website","assets":"/website"},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				node_ids: [0, 2],
-				params: {},
-				routeId: ""
-			}
-		});
-	</script>
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 2],
+					params: {},
+					routeId: "",
+					data: (function(a){return [a,a]}(null)),
+					form: null
+				},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="x7m13a"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script>
 	</div>
 	</body>
 </html>
