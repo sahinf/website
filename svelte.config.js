@@ -1,11 +1,12 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
-const dev = process.env.NODE_ENV === 'development';
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: preprocess(),
+  preprocess: preprocess({
+    postcss: true,
+    preserve: ['module'],
+  }),
 
   kit: {
     adapter: adapter({
@@ -14,9 +15,6 @@ const config = {
       fallback: null,
       precompress: false
     }),
-    // paths: {
-    //   base: dev ? '' : '/website',
-    // },
     appDir: 'internal',
   }
 };
