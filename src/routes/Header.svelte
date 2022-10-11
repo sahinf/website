@@ -3,17 +3,19 @@
 	// import logo from '$lib/images/svelte-logo.svg';
 	import logo from '$lib/images/logo.png';
 	import github from '$lib/images/github.svg';
+	import ThemeSelector from '$lib/ThemeSelector.svelte';
 </script>
 
-<header>
-	<!-- <a href="https://kit.svelte.dev"> -->
+<div
+	class="sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm"
+>
 	<div class="mt-2 ml-2">
 		<a class="flex flex-row" href="https://furkan.tv">
 			<img class="w-8 h-8" src={logo} alt="Furkan Logo" />
 		</a>
 	</div>
 
-	<nav>
+	<div>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
@@ -31,22 +33,23 @@
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
 		</svg>
-	</nav>
+	</div>
 
-	<div class="corner">
+	<div class="flex-0">
+		<ThemeSelector />
 		<a href="https://github.com/sahinf">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
-</header>
+</div>
 
 <style>
-	header {
+	/* header {
 		display: flex;
 		justify-content: space-between;
-	}
+	} */
 
-	.corner {
+	/* .corner {
 		width: 3em;
 		height: 3em;
 	}
@@ -63,7 +66,7 @@
 		width: 2em;
 		height: 2em;
 		object-fit: contain;
-	}
+	} */
 
 	nav {
 		display: flex;
